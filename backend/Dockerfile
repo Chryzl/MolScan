@@ -1,3 +1,5 @@
+# Based on https://github.com/daverona/docker-osra/
+
 FROM ubuntu:14.04
 
 ARG DEBIAN_FRONTEND=noninteractive
