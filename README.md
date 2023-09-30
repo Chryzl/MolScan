@@ -17,7 +17,7 @@ docker build -t <your-image-name> .
 docker container run --rm --publish 3000:3000 <your-image-name>
 ```
 
-This will run the image in a new container and map the exposed port 3000 to the machines port 3000.
+This will run the image in a new container and map the exposed port 3000 to the machine's port 3000.
 
 To not keep the container, `--rm` will remove it, after it is stopped.
 
@@ -29,4 +29,4 @@ To not keep the container, `--rm` will remove it, after it is stopped.
 | /api/osra/test    | Will run OSRA on a png image of riboflavin and return SMILE
 
 
-![Riboflavin](backend/res/ribo.png)
+![Riboflavin](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Riboflavin.svg/440px-Riboflavin.svg.png)
