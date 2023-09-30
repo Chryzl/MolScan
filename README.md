@@ -22,7 +22,11 @@ This will run the image in a new container and map the exposed port 3000 to the 
 To not keep the container, `--rm` will remove it, after it is stopped.
 
 ### Endpoints
-| Endpoint   | Description                      |
-|------------|----------------------------------|
-| /status    | Check, whether server is running |
-| /help      | Print osra help                  |
+| Endpoint          | Description                      |
+|-------------------|----------------------------------|
+| /api/status       | Check, whether server is running |
+| /api/osra/help    | Print osra help                  |
+| /api/osra/test    | Will run OSRA on a png image of riboflavin and return SMILE
+
+
+![Riboflavin](backend/res/ribo.png)

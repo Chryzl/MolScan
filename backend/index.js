@@ -9,7 +9,7 @@ app.listen(PORT, () => {
     console.log("Server Listening on PORT:", PORT);
 });
 
-app.get("/status", (request, response) => {
+app.get("api/status", (request, response) => {
     const status = {
         "Status": "Running"
     };
@@ -17,8 +17,14 @@ app.get("/status", (request, response) => {
     response.send(status);
 });
 
-app.get("/help", async (request, response) => {
+app.get("api/osra/help", async (request, response) => {
     let { stdout } = await utils.sh("osra --help");
+
+    response.send(stdout);
+})
+
+app.get("api/osra/test", async (request, response) => {
+    let { stdout } = await utils.sh("osra res/ribo.png");
 
     response.send(stdout);
 })
